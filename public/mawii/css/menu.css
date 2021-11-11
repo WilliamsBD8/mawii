@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+.primario {
+    background: #044aa8 !important;
+}
+
+.encabezado {
+    width: 100%;
+    transition: all 500ms ease;
+}
+
+.navbar-fixed {
+    height: 0 !important;
+}
+
+.encabezado .nav-wrapper .logo {
+    width: 300px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.encabezado .nav-wrapper .logo img {
+    height: 100%;
+}

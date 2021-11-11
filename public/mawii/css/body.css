@@ -1,0 +1,468 @@
+.primario.principal {
+    padding-top: 120px;
+}
+
+.primario.principal .row {
+    position: relative;
+    margin: 0;
+}
+
+.primario.principal .row::before {
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
+    content: '';
+    background: #d0d0ce;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.primario.principal .col {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.primario.principal .col_1 p {
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 40px;
+}
+
+.primario.principal .col_1 p b {
+    font-size: 30px;
+}
+
+.primario.principal .col_1 ul li {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.primario.principal .col_1 a {
+    display: block;
+    width: 300px;
+    background: #f24968;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px rgba(199, 33, 63, .9);
+    transition: all 500ms ease;
+}
+
+.primario.principal .col_1 a:hover {
+    background: #D0324F;
+}
+
+.primario.principal .col_2 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.primario.principal .col_2 .content_img {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.primario.principal .col_2 .content_img::before {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -20px;
+    left: -75px;
+    content: '';
+    background-image: url("../img/tuerca.png");
+    background-size: 150px 150px;
+    z-index: -1;
+}
+
+.primario.principal .col_2 .content_img .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.primario.principal .col_2 .img img {
+    height: 100%;
+}
+
+
+/*  BTN-FLOAT */
+
+.btn-float a {
+    width: 270px;
+    right: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 35%;
+    transition: all 500ms ease;
+    background: #022859;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 45px 0 0 45px;
+    text-transform: uppercase;
+    box-shadow: 0 0 3px #fff;
+    transition: all 500ms ease;
+}
+
+.btn-float a .fab {
+    background: green;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 50%;
+}
+
+.btn-float a:hover {
+    width: 300px;
+    padding: 10px 40px 10px 10px;
+}
+
+
+/*  PREGUNTAS  */
+
+.preguntas {
+    position: relative;
+}
+
+.preguntas::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    top: -149px;
+    clip-path: polygon(0 100%, 0% 88%, 20% 80%, 35% 76%, 50% 75%, 65% 76%, 80% 80%, 100% 88%, 100% 100%);
+}
+
+.preguntas::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    height: 150px;
+    background: #fff;
+    bottom: -149px;
+    clip-path: polygon(0 0, 0% 12%, 20% 20%, 35% 24%, 50% 25%, 65% 24%, 80% 20%, 100% 12%, 100% 0);
+}
+
+.preguntas h4 {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #353535;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.preguntas .row {
+    margin: 0;
+}
+
+.preguntas .col .row .col {
+    background: #d0d0ce;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+.preguntas .col.left_col .row .col section {
+    text-align: left;
+}
+
+.preguntas .col.right_col .row .col section {
+    text-align: right;
+}
+
+.preguntas .col .row .col section {
+    width: 100%;
+    display: block;
+}
+
+.preguntas .col.left_col .row .col .texto {
+    text-align: right;
+}
+
+.preguntas .col.right_col .row .col .texto {
+    text-align: left;
+}
+
+.preguntas .col .row .col .texto b {
+    width: 100%;
+    display: block;
+}
+
+.preguntas .col .row .col .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preguntas .col .row .col .icon span i {
+    font-size: 40px !important;
+}
+
+.preguntas .col .row .col .icon span {
+    background: #022859;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.preguntas .enlace {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.preguntas .enlace a {
+    display: block;
+    width: 300px;
+    background: #f24968;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px rgba(199, 33, 63, .9);
+    transition: all 500ms ease;
+}
+
+.preguntas .enlace a:hover {
+    background: #D0324F;
+}
+
+@media screen and (max-width: 768px) {
+    .preguntas .col .row .col .icon {
+        display: none;
+    }
+}
+
+
+/*  DUDAS  */
+
+.dudas {
+    padding-top: 25px;
+    padding-bottom: 75px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #d0d0ce;
+}
+
+.dudas h1 {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+.dudas .form {
+    width: 600px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dudas .form .input-field {
+    width: 100%;
+    margin: 0;
+}
+
+.dudas .form .input-field textarea {
+    margin: 0 !important;
+    height: 50px;
+    background: #fff;
+}
+
+.dudas .form button {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    background: #f24968;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .dudas .form {
+        flex-wrap: wrap;
+    }
+    .dudas .form .input-field textarea {
+        width: 100%;
+    }
+}
+
+
+/* NOSOTROS */
+
+.nosotros {
+    background: #022859;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.nosotros::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: #022859;
+    top: -149px;
+    clip-path: polygon(0 100%, 0% 88%, 20% 80%, 35% 76%, 50% 75%, 65% 76%, 80% 80%, 100% 88%, 100% 100%);
+}
+
+.nosotros h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.nosotros p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.nosotros .content_video {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.nosotros .content_video .video_c {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.nosotros .content_video .video_c video {
+    height: 100%;
+}
+
+.nosotros .content_video .video_c img {
+    height: 100%;
+}
+
+
+/* CONTACTOS */
+
+.contacto {
+    background: #353535;
+}
+
+.contacto .row {
+    margin-bottom: 0;
+}
+
+.contacto h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.contacto p,
+.contacto li {
+    color: #fff;
+}
+
+.contacto ul li {
+    padding: 20px 0;
+}
+
+.contacto .redes {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacto .redes .iconos {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .redes .iconos i {
+    margin: 10px 20px;
+    font-size: 25px;
+    color: #fff;
+    background: #f24968;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.footer {
+    font-size: 20px;
+    color: #fff;
+    background: #f24968;
+    padding: 12px;
+    text-align: center;
+}
+
+.slick-prev:before,
+.slick-next::before {
+    color: #353535 !important;
+    font-size: 25px !important;
+}
+
+.my_slick li {
+    height: 100px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.my_slick li img {
+    height: 100%;
+}
+
+.my_slick_2 li {
+    height: 150px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.my_slick_2 li img {
+    height: 100%;
+}

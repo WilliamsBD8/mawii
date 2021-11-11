@@ -1,0 +1,23 @@
+CRITICAL - 2021-10-26 16:04:42 --> Directory does not exist
+#0 C:\laragon\www\Wilfredo\mawii-cms\app\Libraries\GroceryCrudEnterprise\grocerycrud\enterprise\src\GroceryCrud\Core\State\StateAbstract.php(403): Upload\Storage\FileSystem->__construct('uploader/custom...')
+#1 C:\laragon\www\Wilfredo\mawii-cms\app\Libraries\GroceryCrudEnterprise\grocerycrud\enterprise\src\GroceryCrud\Core\State\UploadState.php(32): GroceryCrud\Core\State\StateAbstract->upload('imagen', 'uploader/custom...')
+#2 C:\laragon\www\Wilfredo\mawii-cms\app\Libraries\GroceryCrudEnterprise\grocerycrud\enterprise\src\GroceryCrud\Core\State\StateAbstract.php(883): GroceryCrud\Core\State\UploadState->GroceryCrud\Core\State\{closure}(Object(stdClass))
+#3 C:\laragon\www\Wilfredo\mawii-cms\app\Libraries\GroceryCrudEnterprise\grocerycrud\enterprise\src\GroceryCrud\Core\State\StateAbstract.php(303): GroceryCrud\Core\State\StateAbstract->stateOperation(NULL, Object(stdClass), Object(Closure))
+#4 C:\laragon\www\Wilfredo\mawii-cms\app\Libraries\GroceryCrudEnterprise\grocerycrud\enterprise\src\GroceryCrud\Core\State\UploadState.php(44): GroceryCrud\Core\State\StateAbstract->stateOperationWithCallbacks(Object(stdClass), 'Upload', Object(Closure))
+#5 C:\laragon\www\Wilfredo\mawii-cms\app\Libraries\GroceryCrudEnterprise\grocerycrud\enterprise\src\GroceryCrud\Core\GroceryCrud.php(2433): GroceryCrud\Core\State\UploadState->render()
+#6 C:\laragon\www\Wilfredo\mawii-cms\app\Controllers\TableController.php(56): GroceryCrud\Core\GroceryCrud->render()
+#7 C:\laragon\www\Wilfredo\mawii-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\TableController->index(Array)
+#8 C:\laragon\www\Wilfredo\mawii-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableController))
+#9 C:\laragon\www\Wilfredo\mawii-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Wilfredo\mawii-cms\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Wilfredo\mawii-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2021-10-26 17:12:42 --> Permission denied. You are not allowed to use this operation
+#0 C:\laragon\www\Wilfredo\mawii-cms\app\Libraries\GroceryCrudEnterprise\grocerycrud\enterprise\src\GroceryCrud\Core\GroceryCrud.php(2433): GroceryCrud\Core\State\InsertState->render()
+#1 C:\laragon\www\Wilfredo\mawii-cms\app\Controllers\TableController.php(113): GroceryCrud\Core\GroceryCrud->render()
+#2 C:\laragon\www\Wilfredo\mawii-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\TableController->index(Array)
+#3 C:\laragon\www\Wilfredo\mawii-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TableController))
+#4 C:\laragon\www\Wilfredo\mawii-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Wilfredo\mawii-cms\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 C:\laragon\www\Wilfredo\mawii-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\laragon\\www\\...')
+#7 {main}
